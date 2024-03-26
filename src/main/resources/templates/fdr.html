@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>FDR</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>TEAM</th>
+                <th>GW1</th>
+                <th>GW2</th>
+            </tr>
+            <tr th:each="team: ${teams}}">
+                <td th:each="fixture: ${team.fixtures}">
+                    Team:<br>
+                    <span th:text="${}"
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
